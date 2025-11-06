@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalBold.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalBlack.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalAir.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalAir.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalExtraBold.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalBook.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalBook.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalLight.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalExtraLight.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalMedium.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalThin.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oldschool Grotesk";
+  src: url("../fonts/OldschoolGrotesk-NormalRegular.woff2") format("woff2"),
+    url("../fonts/OldschoolGrotesk-NormalRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lay Grotesk";
+  src: url("../fonts/LayGrotesk-Trial-Black.woff2") format("woff2"),
+    url("../fonts/LayGrotesk-Trial-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lay Grotesk";
+  src: url("../fonts/LayGrotesk-Trial-Bold.woff2") format("woff2"),
+    url("../fonts/LayGrotesk-Trial-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lay Grotesk";
+  src: url("../fonts/LayGrotesk-Trial-Medium.woff2") format("woff2"),
+    url("../fonts/LayGrotesk-Trial-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lay Grotesk";
+  src: url("../fonts/LayGrotesk-Trial-Semibold.woff2") format("woff2"),
+    url("../fonts/LayGrotesk-Trial-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lay Grotesk";
+  src: url("../fonts/LayGrotesk-Trial-Regular.woff2") format("woff2"),
+    url("../fonts/LayGrotesk-Trial-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@sm: ~"(min-width: 576px)";
+@md: ~"(min-width: 768px)";
+@lg: ~"(min-width: 992px)";
+@xl: ~"(min-width: 1200px)";
+@xxl: ~"(min-width: 1400px)";
+
+@color: #6c7179;
+
+body {
+  background: #111;
+  font-family: "Oldschool Grotesk";
+  color: #f1f1f1;
+}
+img {
+  max-width: 100%;
+}
+
+.availability-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  .availability-bar__item {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    padding-left: 5px;
+    & + .availability-bar__item {
+      padding-left: 15px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        background: #ffffff;
+        border-radius: 50%;
+        top: 3px;
+      }
+    }
+  }
+}
+
+.status-indicator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
+  height: min-content;
+  top: -2px;
+  .status-indicator__dot {
+    background: #12b33f;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    animation: 1.5s blink ease infinite;
+    position: absolute;
+  }
+  .status-indicator__ring {
+    background: #12b33f;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    animation: 1.5s blinkscale ease infinite;
+    position: absolute;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinkscale {
+  from,
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1;
+  @media @sm { font-size: 48px; }
+  @media @md { font-size: 56px; }
+  @media @lg { font-size: 64px; }
+  @media @xl { font-size: 72px; }
+  @media @xxl { font-size: 80px; }
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.1;
+  @media @sm { font-size: 36px; }
+  @media @md { font-size: 40px; }
+  @media @lg { font-size: 46px; }
+  @media @xl { font-size: 52px; }
+  @media @xxl { font-size: 58px; }
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 1.1;
+  @media @sm { font-size: 28px; }
+  @media @md { font-size: 30px; }
+  @media @lg { font-size: 34px; }
+  @media @xl { font-size: 38px; }
+  @media @xxl { font-size: 42px; }
+}
+
+h4 {
+  font-size: 22px;
+  @media @sm { font-size: 24px; }
+  @media @md { font-size: 26px; }
+  @media @lg { font-size: 28px; }
+  @media @xl { font-size: 30px; }
+  @media @xxl { font-size: 32px; }
+}
+
+h5 {
+  font-size: 18px;
+  @media @sm { font-size: 18px; }
+  @media @md { font-size: 20px; }
+  @media @lg { font-size: 22px; }
+  @media @xl { font-size: 24px; }
+  @media @xxl { font-size: 26px; }
+}
+
+h6 {
+  font-size: 16px;
+  @media @sm { font-size: 16px; }
+  @media @md { font-size: 18px; }
+  @media @lg { font-size: 18px; }
+  @media @xl { font-size: 20px; }
+  @media @xxl { font-size: 22px; }
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+    @media @md { 
+        font-size: 18px;
+    }
+}
+
+.hero-banner{
+    padding: 80px 0;
+    .text-content{
+        max-width: 390px;
+    }
+}
+
+.btn-primary{
+    background: #8cff2e;
+    box-shadow: rgba(132, 255, 31, 0.32) 0px 12px 40px 0px;
+    transition: all 0.5s ease;
+    &:hover{
+        // animation: box 1.5s ease;
+        box-shadow: none;
+    }
+}
+
+@keyframes box {
+    from,to{
+        box-shadow: rgba(132, 255, 31, 0.32) 0px 12px 40px 0px;
+    }
+    50%{
+        box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px;
+    }
+}
